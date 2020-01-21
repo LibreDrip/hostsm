@@ -1,0 +1,51 @@
+* Description
+
+- Hosts File Symbolic Link Manager
+- quickly switch between multiple hosts files
+
+* Usage
+
+- *Backup your hosts file, there are currently no safety features to detect if the file linked is a legit hosts file*
+- don't run with sudo
+- symlinking to the hosts file calls sudo command on it's own
+- pass no options for help/usage
+
+** Directories
+
+- put hostsm.sh in /bin/ folder for quick access
+- hosts files are put in ~/.config/hostsm
+
+* Compatibility
+
+- all GNU/LINUX Distributions which use the /etc/hosts file
+- MacOS (until 10.14.x macOS Mojave)
+- MacOS Catalania user can manually change the script to route to /private/etc/hosts
+- Windows: currently not supported, planned
+
+* Recommended HOSTS Files
+
+https://github.com/StevenBlack/hosts
+
+* Use cases
+
+- quickly enable or disable social media
+- probably a lot more
+
+** Alias
+
+#+BEGIN_SRC bash
+alias social-media-off=hostsm -f [name of HOSTS file that blocks social media]
+alias social-media-on=hostsm -f [name of HOSTS file that allows social media]
+#+END_SRC
+
+* TODO
+
+- detect if user is running MacOS Catalania and change hosts location to /private/etc/hosts
+- make a batch script which works on Windows (example: https://github.com/StevenBlack/hosts/blob/master/updateHostsWindows.bat)
+- tidy up script
+- automatically install script, etc
+- beginner friendly documentation
+- print name of currently used hosts file
+- autocomplete file name
+
+hostsm is free/libre software.
