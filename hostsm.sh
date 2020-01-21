@@ -18,7 +18,7 @@ usage()
     echo -e "-l, --list \t lists all available hosts files"
     echo -e "-f, --file FILE \t symlinks the selected file to /etc/hosts and overwrite old one"
     echo
-    echo "Github page:"
+    echo "Github page: https://github.com/LibreDrip/hostsm"
 
     exit 1
 }
