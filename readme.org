@@ -13,6 +13,12 @@
 ** Directories
 
 - put hostsm.sh in /bin/ folder for quick access
+
+#+BEGIN_SRC bash
+mv hostsm.sh /bin/hostsm
+chmod +x hostsm
+#+END_SRC
+
 - hosts files are put in ~/.config/hostsm
 
 * Compatibility
